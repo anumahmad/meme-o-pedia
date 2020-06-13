@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link href="Day.css" id="styles" rel="stylesheet" type="text/css" />
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Memes!</title>
+   <title>Memes!</title>
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
+   <!-- import the webpage's stylesheet -->
+   <link rel="stylesheet" href="./day.css" />
+   <link
+     href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+     rel="stylesheet"
+   />
+</head>
   <body>
     <div class="topnav" id="myTopnav">
-      <a href="index.html" class="active" style="padding:0px"
-        ><img src =
-        "https://cdn.glitch.com/851ce55a-7aed-4a2a-9899-2049413586a3%2FUntitled-2.png?v=1592083031601"width="100"
-        height="45"</a
-      >
+      <a href="index.html" class="active" style="padding:0px"> 
+        <img src =  "https://cdn.glitch.com/851ce55a-7aed-4a2a-9899-2049413586a3%2FUntitled-2.png?v=1592083031601"width="100"
+             height="45"
+      </a>
+      
       <a href="https://fairycommentgenerator.glitch.me/" target="_blank"
         >Fairy Generator</a
       >
-      <a href="#contact"></a>
+      <a href="playlist.html">Playlist</a>
       <div class="dropdown">
         <button class="dropbtn">
           Dropdown
@@ -93,9 +97,7 @@
           </div>
           <div class="body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-              reiciendis deserunt doloribus consequatur, laudantium odio dolorum
-              laboriosam.
+              Memes started taking off in the early 2000s with block text and funny cat reactions.
             </p>
             <img
               src="https://cdn.glitch.com/851ce55a-7aed-4a2a-9899-2049413586a3%2FUntitled-1_0002_Screen%20Shot%202020-06-13%20at%203.05.05%20PM.jpg?v=1592075414590"
@@ -193,7 +195,7 @@
             <div class="number-box">
               <span>07</span>
             </div>
-            <h2><span class="small">2016</span>Presidential Election Memes</h2>
+            <h2><span class="small">2016</span>Election Memes</h2>
           </div>
           <div class="body">
             <p>
@@ -253,7 +255,7 @@
             <div class="number-box">
               <span>10</span>
             </div>
-            <h2><span class="small">Late 2010's</span> Meme marketing</h2>
+            <h2><span class="small">Late 2010's</span> Meme in marketing</h2>
           </div>
           <div class="body">
             <p>
@@ -297,9 +299,7 @@
           </div>
           <div class="body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-              reiciendis deserunt doloribus consequatur, laudantium odio dolorum
-              laboriosam.
+              Reccently Tik Tok comment section have been filled with these sparkly comments that insult others. Click the image below to play around with it!
             </p>
             <a href="https://fairycommentgenerator.glitch.me/"
               ><img
@@ -310,31 +310,29 @@
         </div>
       </div>
       
-      <script>
-$(document).ready(function(){
-$('#mode').click(function(){
-if($('link#styles').attr('href')=="Day.css"){
-$('#mode').attr('value','Switch To Day Mode')
-$('link#styles').attr('href','Night.css')
-}
-else
-{
-$('#mode').attr('value','Switch To Night Mode')
-$('link#styles').attr('href','Day.css')
-}
-})
+<script>
+  $(document).ready(function(){
+  $('#mode').click(function(){
+  if($('link#styles').attr('href')=="day.css"){
+  $('#mode').attr('value','Back To Normal')
+  $('link#styles').attr('href','night.css')
+  }
+  else
+  {
+  $('#mode').attr('value','Memeify')
+  $('link#styles').attr('href','Day.css')
+  }
+  })
 
-});
+  });
 </script>
-      <br> <br>
-<div class="table-responsive container" style="display:flex;justify-content:center;align-items:center;">
-<input type=button id="mode" text="Switch Mode" class="btn btn-primary" value="Switch To Night Mode" >  </div>
+<div class="table-responsive container">
+<input type=button id="mode" text="Switch Mode" class="btn btn-primary" value="Memeify" >  </div>
 
     </section>
       
     <footer>
-      made with 💖 by anum, bhavana, hana, mackenzie, and trinity for same hacks
-      different home hackathon
+      made with 💖 by anum, bhavana, hana, mackenzie, and trinity
     </footer>
   </body>
 </html>
