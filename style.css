@@ -292,3 +292,7 @@ body {
 #timeline .demo-card--step6 .head::after {
     border-color: #401225 ;
 }
+
+footer {
+  text-align: center;
+}
