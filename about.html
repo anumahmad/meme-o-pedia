@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="about.css" type="text/css">
   </head>
   <body>
-  <script src="myscripts.js"></script>
+  
   <div id="w">
     <h1>Meet the Team</h1>
     <p>Click any of the team member's photos to show more details.</p>
@@ -54,5 +54,29 @@
       </li>
     </ul>
   </div>
+    
+    <script>
+          $(function(){
+          $('.profilepic').on('click', function(e){
+            var $biginfo = $('#teamcontent');
+            var $bigname = $('#bigname');
+            var $bigjob  = $('#bigjob');
+            var $bigdesc = $('#bigdesc');
+
+            var newname = $(this).attr('alt');
+            var newrole = $(this).siblings('.job').eq(0).html();
+            var newdesc = $(this).siblings('.desc').eq(0).html();
+
+            $bigname.html(newname);
+            $bigjob.html(newrole);
+            $bigdesc.html(newdesc);
+
+            if($biginfo.css('display') == 'none') {
+              $biginfo.slideDown(350);
+            }
+          });
+        })
+
+    </script>
   </body>
 </html>
