@@ -329,7 +329,7 @@ body {
   }
 
   .active {
-    background-color: #401225;
+    background-color: #FFA500;
     color: white;
   }
 
@@ -423,3 +423,21 @@ body {
       text-align: left;
     }
   }
+
+
+input {
+  background-color: #FFA500; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+input: hover {
+background-color: #4CAF50;
+  color: white;
+}

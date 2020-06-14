@@ -418,7 +418,7 @@ body {
   }
 }
 input {
-  background-color: #4CAF50; /* Green */
+  background-color: #5F1A37; /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -429,6 +429,7 @@ input {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
+input: hover {
 background-color: #4CAF50;
   color: white;
+}
