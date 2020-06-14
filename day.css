@@ -462,3 +462,8 @@ label {
 #form1 {
  align: center;
 }
+
+.w3-row-padding {
+  
+  justify-content: center;
+}
