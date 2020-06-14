@@ -45,9 +45,21 @@
           x.className = "topnav";
         }
       }
+      
+        $(document).ready(function() {
+          $("#mode").click(function() {
+            if ($("link#styles").attr("href") == "day.css") {
+              $("#mode").attr("value", "Back To Normal");
+              $("link#styles").attr("href", "night.css");
+            } else {
+              $("#mode").attr("value", "Memeify");
+              $("link#styles").attr("href", "day.css");
+            }
+          });
+        });
     </script>
 
-  <section id="timeline">
+   
       <h1><u><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">iconic meme songs</a></u></h1>
       <p class="leader">
         find the most fitting, impactful bops to add to your playlist 🥳
@@ -143,6 +155,25 @@ return false; // required to not refresh the page; just leave this here
  
 </div>
       
+<div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Playlist 1</div>
+        <a href="spotify:playlist:54LLv4GZ0FLU6q2hbZwRdV" target="_blank"><img src="https://i.ibb.co/M2yF7fs/Screen-Shot-2020-06-14-at-12-50-55-AM.png" alt="House" style="width:100%"></a>
+      </div>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Playlist 2</div>
+        <a href="spotify:playlist:54wQoxVx664t7dvWS8iNqG" target="_blank"><img src="https://i.ibb.co/GnYsDWD/Screen-Shot-2020-06-14-at-12-49-53-AM.png" alt="House" style="width:100%"></a>
+      </div>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Playlist 3</div>
+        <a href="spotify:playlist:5LqkTrSMEgW1gRMZhHNOkg" target="_blank"><img src="https://i.ibb.co/54rL35V/Screen-Shot-2020-06-14-at-12-47-54-AM.png" alt="House" style="width:100%"></a>
+      </div>
+</div>
  
     <footer>
       made with 💖 by anum, bhavana, hana, mackenzie, and trinity
