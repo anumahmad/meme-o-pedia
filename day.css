@@ -293,6 +293,15 @@ body {
     border-color: #401225 ;
 }
 
+#playlist {
+    padding: 100px 0;
+    background: #f7f7f7;
+    border-top: 1px solid rgba(191, 191, 191, 0.4);
+    border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+    align: center; 
+  
+}
+
 footer {
   text-align: center;
   text-size:  10px;
