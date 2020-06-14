@@ -433,3 +433,11 @@ input: hover {
 background-color: #4CAF50;
   color: white;
 }
+
+label {
+  display:block;
+  margin-bottom:4px;
+  position: relative; /* to contain absolute elements */
+  padding-left:30px; /* free space for custom radio button */
+  cursor: pointer;
+}
