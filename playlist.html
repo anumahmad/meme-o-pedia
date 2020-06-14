@@ -5,6 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<html lang="en">
+  <head>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Kreon|Text+Me+One" rel="stylesheet">
 
@@ -15,6 +17,15 @@
     
     /* Set a specific height */
     min-height: 400px; 
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link href="day.css" id="styles" rel="stylesheet" type="text/css" />
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -23,7 +34,14 @@
     background-size: 1250px;
 }
 </style>
+   <title>Memes!</title>
 
+   <!-- import the webpage's stylesheet -->
+   <link rel="stylesheet" href="./day.css" />
+   <link
+     href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+     rel="stylesheet"
+   />
 </head>
 
  
@@ -48,44 +66,97 @@
     <h5 class="w3-center w3-padding-32 w3-border w3-round-xlarge w3-topbar w3-bottombar w3-border-white"><span class="w3-tag w3-wide"><p style="font: Kreon; font-size: 25px; color: white"><b>Immigration Quiz</b></p></span></h5>
   </div>
 </div>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active" style="padding:0px"> 
+        <img src = "https://cdn.glitch.com/851ce55a-7aed-4a2a-9899-2049413586a3%2FUntitled-2.png?v=1592083031601" width="100"
+        height="45"></a>
+        <a href="https://fairycommentgenerator.glitch.me/" target="_blank">Fairy Generator</a>
+      <a href="playlist.html">Playlist</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="demo/about.html">About</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size:15px;"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
 
 </div><!-- close header div -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
 
+    <section id="timeline">
+      <h1><u><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">iconic meme songs</a></u></h1>
+      <p class="leader">
+        find the most fitting, impactful bops to add to your playlist 🥳</p> 
+    </section> 
+      
+    <!-- Quiz Section -->
 <form id="form1">
 
-<p style="font: Kreon; font-size: 25px; color: black; text-align: left; margin-left: 300px"><b>1. </b></p>
-<label for="var_string"><input type="radio" name="variable" value="20" id="var_string"/> Yes</label>
-<label for="var_join"><input type="radio" name="variable" value="0" id="var_join"/> No</label>
-<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" /> Somewhat</label>
+<p style="font-size: 25px; color: black; text-align: left; margin-left: 300px"><b>1. Favorite Social Media?</b></p>
+<label for="var_string"><input type="radio" name="variable" value="20" id="var_string"/> TikTok/Twitter</label>
+<label for="var_join"><input type="radio" name="variable" value="0" id="var_join"/> Snapchat/Facebook</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" /> Other</label>
 
 
-<p style="font: Kreon; font-size: 25px; color: black; text-align: left; margin-left: 300px"><b>2. Do you know where in the USA you want to live?</b></p>
-<label for="sub_string"><input type="radio" name="sub" value="20" id="sub_string"/> Yes</label>
-<label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/> No</label>
-<label for="sub_info"><input type="radio" name="sub" value="10" id="sub_info" /> Somewhat</label>
+<p style="font-size: 25px; color: black; text-align: left; margin-left: 300px"><b>2. Age Range?</b></p>
+<label for="sub_string"><input type="radio" name="sub" value="20" id="sub_string"/> Gen Z or Beyond</label>
+<label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/> Boomer/Gen X </label>
+<label for="sub_info"><input type="radio" name="sub" value="10" id="sub_info" /> Millenial</label>
 
 
-<p style="font: Kreon; font-size: 25px; color: black; text-align: left; margin-left: 300px"><b>3. Do you have any friends/family who are currently in the USA?</b></p>
-<label for="cat_string"><input type="radio" name="con" value="20" id="cat_string" /> Yes</label>
-<label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" /> No</label>
-<label for="cat_info"><input type="radio" name="con" value="10" id="cat_info" /> Somewhat</label>
+<p style="font-size: 25px; color: black; text-align: left; margin-left: 300px"><b>3. Favorite Meme?</b></p>
+<label for="cat_string"><input type="radio" name="con" value="20" id="cat_string" /> Wendy's Tweets/I'm Already Tracer</label>
+<label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" /> Political/LOLcats/Minion Memes</label>
+<label for="cat_info"><input type="radio" name="con" value="10" id="cat_info" /> Road Work Ahead"/Other Vines</label>
 
 
-<p style="font: Kreon; font-size: 25px; color: black; text-align: left; margin-left: 300px"><b>4. Do you know approximately how long the process to immigrate takes?</b></p>
-<label for="if_string"><input type="radio" name="ifstate" value="20" id="if_string" /> Yes</label>
-<label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" /> No</label>
-<label for="if_info"><input type="radio" name="ifstate" value="10" id="if_info" /> Somewhat</label>
+<p style="font-size: 25px; color: black; text-align: left; margin-left: 300px"><b>4. Time spent online everyday?</b></p>
+<label for="if_string"><input type="radio" name="ifstate" value="20" id="if_string" /> More than 5 hours</label>
+<label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" /> Less than 1 hour</label>
+<label for="if_info"><input type="radio" name="ifstate" value="10" id="if_info" /> 1-4 Hours</label>
+<p><b>3. What best decribes your age group?</b></p>
+<label for="cat_string"><input type="radio" name="con" value="-10" id="cat_string" /> Boomer/Gen X</label>
+<label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" /> Millenial</label>
+<label for="cat_info"><input type="radio" name="con" value="5" id="cat_info" /> Gen Z/Beyond</label>
 
 
-<p style="font: Kreon; font-size: 25px; color: black; text-align: left; margin-left: 300px"><b>5. Are you willing to spend your time and money to move?</b></p>
+<p style="font-size: 25px; color: black; text-align: left; margin-left: 300px"><b>5. Do you consider yourself as a meme expert?</b></p>
 <label for="tim_string"><input type="radio" name="time" value="20" id="tim_string" /> Yes</label>
 <label for="tim_join"><input type="radio" name="time" value="0" id="tim_join" /> No</label>
 <label for="tim_info"><input type="radio" name="time" value="10" id="tim_info" /> Somewhat</label>
+<p><b>4. How long do you spend on the internet everyday?</b></p>
+<label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" /> less than 1 hour</label>
+<label for="if_join"><input type="radio" name="ifstate" value="10" id="if_join" /> 1-5 hours</label>
+<label for="if_info"><input type="radio" name="ifstate" value="20" id="if_info" /> 5-7 hours</label>
 
 <br>
 <br>
 <br>
 <button type="submit" value="Submit" style="margin-left: 740px">Submit</button>
+<button type="submit" value="Submit" style="margin-left: 800px">Submit</button>
 
 </form>
 
@@ -107,11 +178,15 @@ document.getElementById("form1").onsubmit=function() {
      
      
      result = variable + sub + con + ifstate + time;
+     result = variable + sub + con + ifstate;
      
   document.getElementById("grade").innerHTML = result;
 if (result == 100) {result2 = "You are mentally prepared to immigrate, take some time to research a bit more."};
 if (result >= 50) {result2 =  "Immigration is a good option for you, consider doing some more research."};
 if (result < 50) {result2 = "Reconsider why you want to immigrate to the U.S.A."};
+if (result >= 60) {result2 = "new memes"};
+if (result < 60 && > 10 ) {result2 =  "somewhat new memes"};
+if (result <= 10) {result2 = "old memes"};
 
 document.getElementById("grade2").innerHTML = result2; 
 
@@ -138,8 +213,31 @@ return false; // required to not refresh the page; just leave this here
 
 
 
+      <script>
+$(document).ready(function(){
+$('#mode').click(function(){
+if($('link#styles').attr('href')=="Day.css"){
+$('#mode').attr('value','Back To Normal')
+$('link#styles').attr('href','Night.css')
+}
+else
+{
+$('#mode').attr('value','Memeify')
+$('link#styles').attr('href','Day.css')
+}
+})
 
+});
+</script>
+<div class="table-responsive container">
+<input type="button" id="mode" text="Switch Mode" class="btn btn-primary" value="Memeify" >  </div>
 
+  
+    <footer>
+      made with 💖 by anum, bhavana, hana, mackenzie, and trinity
+    </footer>
+  </body>
+</html>
 
 </body>
 </html>
