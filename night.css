@@ -441,3 +441,22 @@ input: hover {
 background-color: #4CAF50;
   color: white;
 }
+
+input[type='radio'] {
+  --active: #275EFE;
+  --border: #BBC1E1;
+  border: 1px solid var(--bc, var(--border));
+}
+
+/* Override defaults */
+input[type='checkbox']:checked,
+input[type='radio']:checked {
+  --b: var(--active);
+  --bc: var(--active);
+}
+  
+/* Apply another border color on hover if not checked & not disabled */
+input[type='checkbox']:not(:checked):not(:disabled):hover,
+input[type='radio']:not(:checked):not(:disabled):hover {
+  --bc: var(--border-hover);
+}
