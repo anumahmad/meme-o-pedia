@@ -65,9 +65,11 @@ body {
   
 }
 
+
 #timeline {
     padding: 100px 0;
-    background: black;
+/*     background: black; */
+  background-image:url("https://media.giphy.com/media/eJ3WgMZusUOBO58JwY/giphy.gif");
     border-top: 1px solid rgba(191, 191, 191, 0.4);
     border-bottom: 1px solid rgba(191, 191, 191, 0.4);
 }
