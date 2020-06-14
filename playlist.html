@@ -32,17 +32,6 @@
         >Fairy Generator</a
       >
       <a href="playlist.html">Playlist</a>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Dropdown
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
       <a href="demo/about.html">About</a>
       <a
         href="javascript:void(0);"
@@ -143,13 +132,10 @@
         than 1 hour</label
       >
       <label for="if_join"
-        ><input type="radio" name="ifstate" value="10" id="if_join" /> 1-5
-        hours</label
+        ><input type="radio" name="ifstate" value="10" id="if_join" /> 1-5 hours</label
       >
       <label for="if_info"
-        ><input type="radio" name="ifstate" value="20" id="if_info" /> 5-7
-        hours</label
-      >
+        ><input type="radio" name="ifstate" value="20" id="if_info" /> 5-7 hours</label>
 
       <br />
       <br />
@@ -181,7 +167,7 @@
       if (result >= 60) {result2 = "new memes"};
       if (result < 60 && > 10 ) {result2 =  "somewhat new memes"};
       if (result <= 10) {result2 = "old memes"};
-
+        
       document.getElementById("grade2").innerHTML = result2;
 
       return false; // required to not refresh the page; just leave this here
