@@ -67,10 +67,85 @@
     <section id="timeline">
       <h1><u><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">iconic meme songs</a></u></h1>
       <p class="leader">
-        find the most impactful bops to add to your playlist 🥳</p> 
+        find the most fitting, impactful bops to add to your playlist 🥳</p> 
     </section> 
       
-    <!-- Project Section -->
+    <!-- Quiz Section -->
+      <form id="form1">
+
+<p><b>1. What is your favorite social media platform?</b></p>
+<label for="var_string"><input type="radio" name="variable" value="20" id="var_string"/>Twitter</label>
+<label for="var_join"><input type="radio" name="variable" value="0" id="var_join"/>Facebook</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" />TikTok</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" />Snapchat</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" />Other</label>
+
+
+<p><b>2. What is your favorite meme type?</b></p>
+<label for="var_string"><input type="radio" name="variable" value="20" id="var_string"/>First Meme/Political Pepe</label>
+<label for="var_join"><input type="radio" name="variable" value="0" id="var_join"/>LOLcats/Minion Memes</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" />Wendy's Tweets</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" />Doge/GIFs/Kermit</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" />Vines/TikToks</label>
+        
+<p><b>3. What best decribes your age group? </b></p>
+<label for="var_string"><input type="radio" name="variable" value="20" id="var_string"/>Boomer</label>
+<label for="var_join"><input type="radio" name="variable" value="0" id="var_join"/>Gen X</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" />Xennial</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" />Millennial</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" />Gen Z and after</label>
+        
+<p><b>4. How long do you spend on the internet everyday?</b></p>
+<label for="var_string"><input type="radio" name="variable" value="20" id="var_string"/>></label>
+<label for="var_join"><input type="radio" name="variable" value="0" id="var_join"/>Facebook</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" />TikTok</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" />Snapchat</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" />Other</label>
+
+<br>
+<br>
+<br>
+<button type="submit" value="Submit" style="margin-left: 740px">Submit</button>
+
+</form>
+
+<br>
+
+<div class="w3-large" style ="background-color: #55c7e1">
+
+<p>Results: <span id="grade">__</span></p>
+<p id="grade2"></p>
+</div><!-- close main div -->
+
+<script>
+document.getElementById("form1").onsubmit=function() {
+       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+     sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+     con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+     ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+     time = parseInt(document.querySelector('input[name = "time"]:checked').value);
+     
+     
+     result = variable + sub + con + ifstate + time;
+     
+  document.getElementById("grade").innerHTML = result;
+if (result == 100) {result2 = "You are mentally prepared to immigrate, take some time to research a bit more."};
+if (result >= 50) {result2 =  "Immigration is a good option for you, consider doing some more research."};
+if (result < 50) {result2 = "Reconsider why you want to immigrate to the U.S.A."};
+
+document.getElementById("grade2").innerHTML = result2; 
+
+     
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+</script>
+ 
+</fieldset>
+</form> 
+      
+      <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
   </div>
