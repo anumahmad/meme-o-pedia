@@ -61,12 +61,12 @@
 /* Fonts */
 
 body {
-    font-family: Inter;
+    font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
 #timeline {
     padding: 100px 0;
-    background: #f7f7f7;
+    background: black;
     border-top: 1px solid rgba(191, 191, 191, 0.4);
     border-bottom: 1px solid rgba(191, 191, 191, 0.4);
 }
@@ -76,6 +76,7 @@ body {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 20px;
+    color: white;
 }
 
 #timeline p.leader {
@@ -83,6 +84,7 @@ body {
     max-width: 90%;
     margin: auto;
     margin-bottom: 45px;
+    color: white;
 }
 
 #timeline .demo-card-wrapper {
@@ -297,11 +299,12 @@ body {
 footer {
   text-align: center;
   text-size:  10px;
+  color: white;
 }
 
 body {
     margin: 0;
-    font-family: Inter;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     
   }
 
