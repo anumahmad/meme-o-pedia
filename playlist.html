@@ -7,7 +7,7 @@
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <link href="Day.css" id="styles" rel="stylesheet" type="text/css" />
+   <link href="day.css" id="styles" rel="stylesheet" type="text/css" />
    <meta charset="utf-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -71,65 +71,30 @@
       
     <!-- Quiz Section -->
 <form id="form1">
-  
-
-<form id="form1">
 
 <p><b>1. What is your favorite social media platform?</b></p>
-<label for="var_string"><input type="radio" name="variable" value="20" id="var_string"/>Twitter</label>
+<label for="var_string"><input type="radio" name="variable" value="20" id="var_string"/>Twitter/TikTok</label>
 <label for="var_join"><input type="radio" name="variable" value="0" id="var_join"/>Facebook</label>
-<label for="var_info"><input type="radio" name="variable" value="20" id="var_info" />TikTok</label>
+<label for="var_info"><input type="radio" name="variable" value="5" id="var_info" />Snapchat/Other</label>
 
 
 <p><b>2. What is your favorite meme type?</b></p>
-<label for="sub_string"><input type="radio" name="sub" value="10" id="sub_string"/>First Meme/Political Pepe</label>
-<label for="sub_join"><input type="radio" name="sub" value="-10" id="sub_join"/>LOLcats/Minion Memes</label>
-<label for="sub_info"><input type="radio" name="sub" value="20" id="sub_info" />Wendy's Tweets</label>
+<label for="sub_string"><input type="radio" name="sub" value="0" id="sub_string"/>Political/LOLcats/Minion Memes</label>
+<label for="sub_join"><input type="radio" name="sub" value="10" id="sub_join"/>"Road Work Ahead"/Other Vines</label>
+<label for="sub_info"><input type="radio" name="sub" value="20" id="sub_info" />Wendy's Tweets/I'm Already Tracer</label>
 
 
 <p><b>3. What best decribes your age group?</b></p>
-<label for="cat_string"><input type="radio" name="con" value="-10" id="cat_string" /> Boomer</label>
-<label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" /> Gen X</label>
-<label for="cat_info"><input type="radio" name="con" value="5" id="cat_info" /> Xennial</label>
+<label for="cat_string"><input type="radio" name="con" value="-10" id="cat_string" /> Boomer/Gen X</label>
+<label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" /> Millenial</label>
+<label for="cat_info"><input type="radio" name="con" value="5" id="cat_info" /> Gen Z/Beyond</label>
 
 
 <p><b>4. How long do you spend on the internet everyday?</b></p>
 <label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" /> less than 1 hour</label>
-<label for="if_join"><input type="radio" name="ifstate" value="5" id="if_join" /> 1-4 hours</label>
-<label for="if_info"><input type="radio" name="ifstate" value="10" id="if_info" /> 5-7 hours</label>
+<label for="if_join"><input type="radio" name="ifstate" value="10" id="if_join" /> 1-5 hours</label>
+<label for="if_info"><input type="radio" name="ifstate" value="20" id="if_info" /> 5-7 hours</label>
 
-<br>
-<br>
-<br>
-<button type="submit" value="Submit" style="margin-left: 740px">Submit</button>
-
-</form>
-
-  
-
-<p><b>1. What is your favorite social media platform?</b></p>
-
-<label for="var_info2"><input type="radio" name="variable" value="5" id="var_info2" />Snapchat</label>
-<label for="var_info3"><input type="radio" name="variable" value="10" id="var_info3" />Other</label>
-
-<p><b>2. What is your favorite meme type?</b></p>
-<label for="sub_string"><input type="radio" name="sub" value="10" id="sub_string"/>First Meme/Political Pepe</label>
-<label for="sub_join"><input type="radio" name="sub" value="-10" id="sub_join"/>LOLcats/Minion Memes</label>
-<label for="sub_info"><input type="radio" name="sub" value="20" id="sub_info" />Wendy's Tweets</label>
-
-
-<p><b>3. What best decribes your age group?</b></p>
-<label for="cat_string"><input type="radio" name="con" value="-10" id="cat_string" /> Boomer</label>
-<label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" /> Gen X</label>
-<label for="cat_info"><input type="radio" name="con" value="5" id="cat_info" /> Xennial</label>
-
-
-<p><b>4. How long do you spend on the internet everyday?</b></p>
-<label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" /> less than 1 hour</label>
-<label for="if_join"><input type="radio" name="ifstate" value="5" id="if_join" /> 1-4 hours</label>
-<label for="if_info"><input type="radio" name="ifstate" value="10" id="if_info" /> 5-7 hours</label>
-
-     
 <br>
 <br>
 <br>
@@ -157,7 +122,7 @@ document.getElementById("form1").onsubmit=function() {
      
   document.getElementById("grade").innerHTML = result;
 if (result >= 60) {result2 = "new memes"};
-if (result < 60 && >10 ) {result2 =  "somewhat new memes"};
+if (result < 60 && > 10 ) {result2 =  "somewhat new memes"};
 if (result <= 10) {result2 = "old memes"};
 
 document.getElementById("grade2").innerHTML = result2; 
@@ -168,67 +133,6 @@ return false; // required to not refresh the page; just leave this here
 } //this ends the submit function
 
 </script>
- 
-
-      
-      <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-  </div>
 
 
       <script>
@@ -248,10 +152,9 @@ $('link#styles').attr('href','Day.css')
 });
 </script>
 <div class="table-responsive container">
-<input type=button id="mode" text="Switch Mode" class="btn btn-primary" value="Memeify" >  </div>
+<input type="button" id="mode" text="Switch Mode" class="btn btn-primary" value="Memeify" >  </div>
 
-    </section>
-      
+  
     <footer>
       made with 💖 by anum, bhavana, hana, mackenzie, and trinity
     </footer>
